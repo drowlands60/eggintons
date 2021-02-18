@@ -1,5 +1,6 @@
-/* BREAK POINT 1 about 450 pixels wide Navbar
-Need media query to make navbar smaller for iphoneX?
+/* BREAK POINTs
+        Less than 5w 8h
+        1 1 - 13 8 
 */
 
 
@@ -83,7 +84,7 @@ nav{
     height: auto;
     
     position: sticky;
-    padding: 0.2rem 4rem;
+    padding: 0.5vh 8vw;
     top: 0;
     font-size: 2rem;
     z-index: 10;
@@ -105,7 +106,7 @@ nav li {
 #nav-contact {
     display: flex;
     justify-content: space-between;
-    
+    margin: 39.6px 0;
     
 }
 
@@ -113,10 +114,6 @@ nav li {
     display: inline-block;
     margin: -7px;
     font-size: 3.3rem;
-}
-
-#nav-contact {
-    margin: 39.6px 0;
 }
 
 #nav-contact div a img {
@@ -254,7 +251,6 @@ nav li {
 /*Media Queries*/
 
 /*Landscape*/
-
 @media (orientation: landscape){
     /*logo*/
     
@@ -330,42 +326,75 @@ nav li {
     
     .review-name {
         padding-bottom: 1vh
-    }
-
-    
+    } 
 }
 
-/*@media screen and (max-width: 450px) and (orientation: portrait) {
-    #body-image {
-        background-image: url('../images/bob.jpg');
-        
-        
-    }
-}*/
-
-
-
-/*Landscape tablet
-
-@media (orientation: Landscape){
-    /*logo
+/*approaching square from portrait*/
+@media screen and (min-aspect-ratio: 47/80) and (max-aspect-ratio: 1/1){
+    
+    /*logo*/
     
     #logo-container {
-        width: 30%;
-        height: 78vh;
+        width: 50vh;
+        height: 85vh;
     }
 
 
-    /*nav
-    nav{
-        min-height: 22vh;
+    /*navbar*/
+    nav {
+        min-height: 14vh;
     }
 
     nav ul {
         margin: 1vh auto;
     }
 
-    #nav-contact{
-        margin: 1vh 0;
+
+    nav li {
+        font-size: 1.7rem;
+
     }
-}*/
+
+    #nav-contact{
+        margin: 3vh 0 1vh 0;
+    }
+
+    #nav-contact p {
+        font-size: 3rem;
+    }
+    
+    #nav-contact div a img {
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+    
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 13/8){
+    
+    #logo-container {
+        width: 70vh;
+        height: 85vh;
+    }
+
+     /*navbar*/
+     nav {
+        min-height: 15vh;
+    }
+
+    nav ul {
+        font-size: 4vh;
+    }
+
+    #nav-contact p {
+        font-size: 7vh;
+    }
+
+    #nav-contact div a img {
+        height: 7vh;
+        width: 7vh;
+    }
+
+
+
+}
