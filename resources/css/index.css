@@ -12,10 +12,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-   
-    
-    
-    
+  
 }
 
 main {
@@ -69,17 +66,17 @@ h1 {
 /*Navbar*/
 
 nav{
-    background-color: black;
-    color: goldenrod;
+    background-color: rgba(13, 1, 49, 1);
+    color: darkgoldenrod;
     display: block;
     min-height: 13vh;
     height: auto;
     position: sticky;
-    padding: 0.5vh 8vw;
+    padding: 0.5vh 7vw;
     top: 0;
     font-size: 2rem;
     z-index: 10;
-    width: 84vw;
+    width: 86vw;
 }
 
 nav ul {
@@ -92,13 +89,23 @@ nav ul {
 nav li {
     font-family: 'Courier New', Courier, monospace;
     list-style-type: none;
+    border-radius: 1.5vh;
+    padding: 0 2vw;
+    
 
+}
+
+nav li:hover {
+    transition: background-color 250ms ease-in, color 250ms ease-in;
+    background-color: darkgoldenrod;
+    color:rgba(13, 1, 49, 1);
 }
 
 #nav-contact {
     display: flex;
     justify-content: space-between;
     margin: 39.6px 0;
+    padding: 0 2vw;
     
 }
 
@@ -106,6 +113,7 @@ nav li {
     display: inline-block;
     margin: -7px;
     font-size: 3.3rem;
+    
 }
 
 #nav-contact div a img {
@@ -118,8 +126,8 @@ nav li {
 /*gallery*/
 
 #gallery-container {
-    background-color: rgba(13, 1, 49, 1);
-    box-shadow: 0 3vh 3vh rgba(13, 1, 49, 1);
+    background-color: darkgoldenrod;
+    box-shadow: 0 0 10vh darkgoldenrod;
     width: 96vw;
     padding: 4rem 2vw;
     margin: 0 auto;
@@ -157,7 +165,7 @@ nav li {
 #review-container{
     width: 80vw;
     margin: 0 auto;
-    background-color: rgba(184, 134, 11, 0.5);
+    background-color: rgba(13, 1, 49, 0.3);
     padding: 4rem 10vw;
 }
 
@@ -183,7 +191,7 @@ nav li {
 /*footer*/
 
 .footer{
-    background-color: black;
+    background-color: rgba(13, 1, 49, 1);
     padding: 1rem 8vw;
     margin: 0 auto;
     display: flex;
@@ -290,8 +298,8 @@ nav li {
         width: 39vw;
         height: auto;
         max-width: 78vh;
-        border: 1px solid rgb(13 1 49);
-        box-shadow: 0 0 2px rgb(255 255 255);
+        border: 1px solid goldenrod;
+        box-shadow: 0 0 2px rgb(0 0 0);
     }
 
     .image-tile span{
@@ -468,7 +476,7 @@ nav li {
     /*gallery*/
 
     #gallery-container {
-        box-shadow: 0 0 10vh rgb(13 1 49);
+        box-shadow: 0 0 3vh darkgoldenrod;
         padding: 2vh 1vw;
         margin: 0 auto;
         width: 98vw;
@@ -488,7 +496,7 @@ nav li {
     .image-tile{
         margin: 0 0.5vh;
         overflow: hidden;
-        width: 20vw;
+        width: 23vw;
         
     }
 
