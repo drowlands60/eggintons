@@ -58,10 +58,27 @@ h1 {
     overflow: hidden;
     align-self: center;
     box-shadow: 0 0 35px #7c7c7c;
-    border: 5px solid #837f98;
    
 
 }
+
+/*Opening Hours*/
+
+#opening-hours{
+    position:absolute;
+    background-color: darkgoldenrod;
+    color: rgba(13, 1, 49, 1);
+    margin: 0;
+    height: 4vh;
+    bottom: 14vh;
+    width: 100%;
+    font-size: 1.7vh;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 /*Navbar*/
 
@@ -79,6 +96,15 @@ nav{
     width: 86vw;
 }
 
+#nav-upper{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#nav-upper p {
+    display:none;
+}
+
+
 nav ul {
     padding: 0;
     width: 100%;
@@ -87,7 +113,6 @@ nav ul {
 }
 
 nav li {
-    font-family: 'Courier New', Courier, monospace;
     list-style-type: none;
     border-radius: 1.5vh;
     padding: 0 2vw;
@@ -121,6 +146,8 @@ nav li:hover {
     height: 3rem;
     width: 3rem;
     margin-left: 2vh;
+    box-shadow: 0 0 3vh darkgoldenrod;
+    border-radius: 100%;
 }
 
 /*gallery*/
@@ -143,20 +170,6 @@ nav li:hover {
     height: 100%;
     width: 100%;
     margin: auto;
-    
-   
-}
-
-.image-tile span{
-    display: block;
-    position: relative;
-    bottom: 100px;
-    width: 100%;
-    background-image: linear-gradient(to right, rgba(155, 155, 155, 0.1), rgb(155, 155, 155, 0.8),rgba(155, 155, 155, 0.1));
-    font-size: 2rem;
-    color:goldenrod;
-    text-shadow: 2px 2px 0 black;
-    margin-bottom: -4rem;
 }
 
 
@@ -261,6 +274,12 @@ nav li:hover {
         height: 74vh;
     }
 
+     /*Opening Hours*/
+     #opening-hours {
+        bottom: 26vh;
+        font-size: 2.3vh;
+    }
+
 
     /*nav*/
     nav{
@@ -287,6 +306,10 @@ nav li:hover {
 
     /*gallery*/
 
+    #gallery-container{
+        padding: 3vh 2vw;
+    }
+
     .gallery-pair {
         display: flex;
         flex-wrap: wrap;
@@ -297,15 +320,9 @@ nav li:hover {
         margin: 1rem;
         width: 39vw;
         height: auto;
-        max-width: 78vh;
+        max-width: 68vh;
         border: 1px solid goldenrod;
         box-shadow: 0 0 2px rgb(0 0 0);
-    }
-
-    .image-tile span{
-        
-        bottom: 100px;
-        font-size: 1rem;
     }
 
     /*reviews*/
@@ -339,6 +356,12 @@ nav li:hover {
     #logo-container {
         width: 50vh;
         height: 85vh;
+    }
+
+    /*Opening Hours*/
+    #opening-hours {
+        bottom: 15vh;
+        font-size: 1.9vh;
     }
 
 
@@ -379,6 +402,16 @@ nav li:hover {
         height: 85vh;
     }
 
+     /*Opening Hours*/
+     #opening-hours {
+        bottom: 15vh;
+        font-size: 1.9vh;
+    }
+
+    #nav-email {
+        display: none;
+    }
+
      /*navbar*/
      nav {
         min-height: 15vh;
@@ -396,16 +429,6 @@ nav li:hover {
         height: 7vh;
         width: 7vh;
     }
-
-    /*gallery*/
-
-    .image-tile span{
-        font-size: 2vh;
-        
-    }
-
-
-
 }
 
 /*Desktop*/
@@ -422,12 +445,28 @@ nav li:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border-bottom: 3px solid darkgoldenrod;
     
+    }
+
+    #nav-upper {
+        display: flex;
+        justify-content: space-between;
+        font-size: 4vh;
+    }
+
+    #nav-upper p {
+        display: block;
+        margin: 1vh auto;
+        padding:  0 2vw;
     }
 
     nav ul {
         font-size: 4vh;
+        justify-content: flex-end;
     }
+
+    
 
     #nav-contact {
         margin: 2vh 0 1vh 0;
@@ -449,6 +488,16 @@ nav li:hover {
         height: 7.6vh;
         width: 7.6vh;
       
+    }
+
+    /*opening-hours*/
+
+    #opening-hours{
+        height: 5vh;
+        bottom: 75vh;
+        font-size: 1.9vh;
+        margin: 1vh 0;
+        
     }
 
 
@@ -501,11 +550,7 @@ nav li:hover {
     }
 
 
-    .image-tile span{
-        bottom: 100px;
-        font-size: 3vh;
-        margin-bottom: -4rem;
-    }
+
 
     /*reviews*/
     #review-container {
@@ -569,9 +614,58 @@ nav li:hover {
     }
 
 
+    /*Small fixes for very large tablets*/
+    @media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 13/8){
+        #nav-upper {
+            font-size: 3vh;
+        }
+    
+        nav ul {
+            font-size: 3vh;
+        }
+    }
 
-}
+    @media screen and (min-aspect-ratio: 47/80) and (max-aspect-ratio: 1/1){
+        #body-image{
+            top: 16vh;
+        }
+        
+        #body-filter{
+            top: 16vh;
+        }
+        
+        nav {
+            height: 16vh;
+        }
 
-.image-tile span {
-    display: none;
+        #nav-upper p{
+            display: none;
+        }
+
+        nav ul {
+            justify-content: space-between;
+        }
+
+        #nav-contact p {
+            font-size: 5.8vh;
+        }
+        
+        #nav-contact div a img {
+            height: 6.6vh;
+            width: 6.6vh;
+        }
+
+        #opening-hours{
+            bottom: 77vh;
+        }
+
+        .review-tile {
+            font-size: 1.9vw;
+        }
+
+
+    }
+
+
+
 }
