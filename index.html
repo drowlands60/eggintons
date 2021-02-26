@@ -5,22 +5,29 @@
     <link rel="stylesheet" href="./resources/css/index.css">
     <link rel="icon" href="./resources/images/logo.jpg">
     <meta charset="UTF-8">
+    <meta name="keywords" content="cafe food Sale Manchester takeout takeaway chef">
+    <meta name="description" content="Chef Egginton's cafe and bespoke private menu service based in Sale">
+    <meta name="og:image" content="resources\images\background.jpg">
+    <meta name="og:description" content="Chef Egginton's cafe and bespoke private menu service">
+    <meta name="og:title" content="Egginton's">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 </head>
 <body>
-    <div id="logo-container">
-        <img src="resources/images/logo.jpg" alt="Egginton's Logo">
-    </div>
-    <div id="opening-hours">
-        <p>Open Monday - Friday 10 - 4 Saturday and Sunday 9 - 4</p>
-    </div>  
+    <header>
+        <div id="logo-container">
+            <img src="resources/images/logo.jpg" alt="Egginton's Logo">
+        </div>
+        <div id="opening-hours">
+            <p>Open Monday - Friday 10 - 4 Saturday and Sunday 9 - 4</p>
+        </div>  
+    </header>
     <nav>
         <div id="nav-upper">
             <p id="nav-email">rg.eggington@gmail.com</p>
             <ul>
                 <li>menu</li>
                 <li>bespoke</li>
-                <li>find</li>
+                <a href="map.html"><li>find</li></a>
                 <li>contact</li>
             </ul>
         </div>
@@ -31,9 +38,23 @@
                 <a href="https://www.instagram.com/eggintonscatering/?hl=en" target="_blank"><img src="./resources/images/insta.png" alt="Instagram link"></a>
             </div>
         </div> 
-    </nav>     
+    </nav>
     <main>
-        <div class="container" id="gallery-container">
+        <section id="about" class="container">
+            <div id="about-blurb">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero nisl, lacinia in interdum nec, eleifend nec magna. Nullam nunc felis, dignissim nec tellus tincidunt, vulputate tristique orci. Suspendisse venenatis dictum ex, sed fringilla est. In at magna velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sit amet sapien elit. Suspendisse ante est, pulvinar eu libero id, faucibus imperdiet sapien. Pellentesque nec consequat augue. Mauris tincidunt vitae nunc vel.
+                </p>
+            </div>
+            <div id="announcements">
+                <p>We're currently closed for eat-in due to covid restrictions but we're open for take-out, deliveries or our bespoke menu service</p>
+            </div>
+            <div about-image-tile>
+                <img src="./resources/images/cafe.jpg" alt="Eggintons Cafe">
+            </div>
+
+        </section>
+        <section class="container" id="gallery-container">
             <div class="gallery-pair">
                 <div class="image-tile">
                     <img src="./resources/images/meal1.jpg" alt="dish">
@@ -82,8 +103,8 @@
                     <img src="./resources/images/meal12.jpg" alt="dish">
                 </div>
             </div>
-        </div>
-        <div id="review-container" class="container">
+        </section>
+        <section id="review-container" class="container">
             <div class="left">
                 <div class="review-tile"> 
                     <p class="review-para">Great place. It's one of them hidden treasures offering quality sourced food at a great price and its in a nice location in sale. Salt and pepper chips and wings are to die for.
@@ -112,8 +133,8 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="footer container">
+        </section>
+        <footer class="footer container">
             <div id="address-container">
                 <p>1A Ashton Lane</p>
                 <p>Sale</p>
@@ -123,11 +144,11 @@
             <a href="https://g.page/eggintons?share" target="_blank"><img src="./resources/images/maps.png" alt="Google Maps link"></a>
             <a href="https://www.facebook.com/eggintonscatering/" target="_blank"><img src="./resources/images/facebook.png" alt="Facebook link"></a>
             <a href="https://www.instagram.com/eggintonscatering/?hl=en" target="_blank"><img src="./resources/images/insta.png" alt="Instagram link"></a>    
-        </div>
+        </footer>
         
         
     </main>
     <div id="body-image"></div>
-    <div id="body-filter"></div>    
+    <div class="body-filter"></div>    
 </body>
 </html>

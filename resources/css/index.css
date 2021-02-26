@@ -1,4 +1,8 @@
 
+#about {
+    display: none;
+}
+
 html {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
@@ -15,6 +19,7 @@ body {
   
 }
 
+
 main {
     position: relative;
     
@@ -24,6 +29,11 @@ h1 {
     margin-top: 10vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 3px 3px 0 #7c7c7c;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .left {
@@ -146,15 +156,20 @@ nav li:hover {
     height: 3rem;
     width: 3rem;
     margin-left: 2vh;
-    box-shadow: 0 0 3vh darkgoldenrod;
     border-radius: 100%;
+}
+
+/*about*/
+
+#about {
+    background-color: rgba(13, 1, 49, 1);
 }
 
 /*gallery*/
 
 #gallery-container {
     background-color: darkgoldenrod;
-    box-shadow: 0 0 10vh darkgoldenrod;
+    box-shadow: 0 3vh 3vh darkgoldenrod;
     width: 96vw;
     padding: 4rem 2vw;
     margin: 0 auto;
@@ -251,7 +266,7 @@ nav li:hover {
     
 }
 
-#body-filter{
+.body-filter{
     background-color: rgba(2, 0, 24, 0.30);
     height:100vh;
     width: 100%;
@@ -262,6 +277,73 @@ nav li:hover {
     z-index: -9; 
 }
 
+/*Map Page*/
+
+#map-body-filter{
+    background-color: rgba(184, 134, 11, 0.9);
+}
+
+#map-main{
+    padding: 5vh 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 35vh 8vh 35vh;
+    grid-template-areas:
+        "map map map map"
+        "opening opening opening opening"
+        "address address social social";
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+
+#map {
+    grid-area: map;
+}
+
+#map iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#map-opening-hours {
+    grid-area: opening;
+    padding: 1vh 0;
+    font-size: 4%;
+    font-weight: 600;
+    color: rgba(13, 1, 49, 1);
+}
+
+#map-opening-hours p{
+    margin: 0.5vh auto;
+    font-size: 2.5vh;
+}
+
+#map-address-container{
+    grid-area: address;
+    font-size: 2.5vh;
+    font-weight: 600;
+    margin: auto 0;
+    color: rgba(13, 1, 49, 1);
+}
+
+#map-social-container{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7vw;
+}
+
+#map-social-container a img {
+    display: inline-block;
+    height: 10vh;
+    width: 10vh;
+    margin: 2vh;
+    border-radius: 100%;
+}
 
 /*Media Queries*/
 
@@ -495,8 +577,9 @@ nav li:hover {
     #opening-hours{
         height: 5vh;
         bottom: 75vh;
-        font-size: 1.9vh;
+        font-size: 2.6vh;
         margin: 1vh 0;
+        font-weight: bold;
         
     }
 
@@ -525,7 +608,7 @@ nav li:hover {
     /*gallery*/
 
     #gallery-container {
-        box-shadow: 0 0 3vh darkgoldenrod;
+        box-shadow: 0 3vh 10vh darkgoldenrod;
         padding: 2vh 1vw;
         margin: 0 auto;
         width: 98vw;
