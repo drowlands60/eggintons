@@ -427,8 +427,49 @@ nav li:hover {
     
     .review-name {
         padding-bottom: 1vh
-    } 
+    }
+    
+
+    /*Map*/
+    #map-main{
+    padding: 0vh 0;
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-rows: 10vh 30vh 30vh;
+    grid-template-areas:
+        "opening opening map map"
+        "address social map map"
+        "address social map map";
+    position: relative;
+    width: 100vw;
+
+    }
+
+    #map {
+        margin: 2vw;
+    }
+
+    #map iframe{
+        height:104%;
+    }
+
+    #map-opening-hours{
+        padding: 0;
+        margin: 2vw;
+    }
+
+    #map-address-container{
+        margin: auto;
+    }
+
+    #map-social-container{
+        padding:0;
+    }
+
 }
+
+
+
 
 /*approaching square from portrait*/
 @media screen and (min-aspect-ratio: 47/80) and (max-aspect-ratio: 1/1){
@@ -510,6 +551,10 @@ nav li:hover {
     #nav-contact div a img {
         height: 7vh;
         width: 7vh;
+    }
+
+    #map iframe{
+        height:104%;
     }
 }
 
@@ -696,6 +741,8 @@ nav li:hover {
         top: 18vh;
     }
 
+    
+
 
     /*Small fixes for very large tablets*/
     @media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 13/8){
@@ -745,10 +792,13 @@ nav li:hover {
         .review-tile {
             font-size: 1.9vw;
         }
-
-
     }
 
-
+    /*Map*/
+    @media (orientation: landscape) {
+        #map-main{
+            margin: 5vh 0;
+        }
+    }
 
 }
