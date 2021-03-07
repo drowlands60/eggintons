@@ -277,74 +277,6 @@ nav li:hover {
     z-index: -9; 
 }
 
-/*Map Page*/
-
-#map-body-filter{
-    background-color: rgba(184, 134, 11, 0.9);
-}
-
-#map-main{
-    padding: 5vh 0;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 35vh 8vh 35vh;
-    grid-template-areas:
-        "map map map map"
-        "opening opening opening opening"
-        "address address social social";
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
-}
-
-
-#map {
-    grid-area: map;
-}
-
-#map iframe{
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-#map-opening-hours {
-    grid-area: opening;
-    padding: 1vh 0;
-    font-size: 4%;
-    font-weight: 600;
-    color: rgba(13, 1, 49, 1);
-}
-
-#map-opening-hours p{
-    margin: 0.5vh auto;
-    font-size: 2.5vh;
-}
-
-#map-address-container{
-    grid-area: address;
-    font-size: 2.5vh;
-    font-weight: 600;
-    margin: auto 0;
-    color: rgba(13, 1, 49, 1);
-}
-
-#map-social-container{
-    grid-area: social;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 7vw;
-}
-
-#map-social-container a img {
-    display: inline-block;
-    height: 10vh;
-    width: 10vh;
-    margin: 2vh;
-    border-radius: 100%;
-}
-
 /*Media Queries*/
 
 /*Landscape*/
@@ -429,43 +361,6 @@ nav li:hover {
         padding-bottom: 1vh
     }
     
-
-    /*Map*/
-    #map-main{
-    padding: 0vh 0;
-    display: grid;
-    grid-template-columns: 20% 20% 30% 30%;
-    grid-template-rows: 10vh 30vh 30vh;
-    grid-template-areas:
-        "opening opening map map"
-        "address social map map"
-        "address social map map";
-    position: relative;
-    width: 100vw;
-
-    }
-
-    #map {
-        margin: 2vw;
-    }
-
-    #map iframe{
-        height:104%;
-    }
-
-    #map-opening-hours{
-        padding: 0;
-        margin: 2vw;
-    }
-
-    #map-address-container{
-        margin: auto;
-    }
-
-    #map-social-container{
-        padding:0;
-    }
-
 }
 
 
@@ -525,8 +420,8 @@ nav li:hover {
         height: 85vh;
     }
 
-     /*Opening Hours*/
-     #opening-hours {
+    /*Opening Hours*/
+    #opening-hours {
         bottom: 15vh;
         font-size: 1.9vh;
     }
@@ -791,13 +686,6 @@ nav li:hover {
 
         .review-tile {
             font-size: 1.9vw;
-        }
-    }
-
-    /*Map*/
-    @media (orientation: landscape) {
-        #map-main{
-            margin: 5vh 0;
         }
     }
 
