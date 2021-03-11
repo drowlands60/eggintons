@@ -1,18 +1,17 @@
 
 
-#logo-container{
+/*#logo-container{
     height: 34vh;
 }
  #logo-container img{
      width: 60%
- }
+ }*/
 
 #bespoke-intro{
     background-color: rgb(255, 255, 255, 0.8);
     color: #0d0131;
     font-size: 3vh;
-    min-height: 50vh;
-    margin: 0 3vw;
+    margin: 3vw;
     padding: 2vh;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,18 +20,92 @@
     margin:0;
 }
 
-/*Cuisines*/
-.cuisine-container{
-    
-        background-color: rgba(13, 1, 49, 1);
-        color: #ffffff;
-        font-size: 2.2vh;
-        margin: 5vh 0 0 0;
-        padding: 2vh;
-        font-family: Arial, Helvetica, sans-serif;
+.cuisine-list{
+    background-color: rgba(13, 1, 49, 1);
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    height: 16vh;
+    display: none;
     
 }
 
+.cuisine-list ul {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
+    
+}
+
+.cuisine-list li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    height: 8vh;
+    font-size: 3rem;
+
+    
+    
+}
+
+.cuisine-list li p{
+    margin: auto 0;
+    color:darkgoldenrod;
+    font-weight: 600;
+}
+
+
+/*Cuisines*/
+.cuisine-container{
+    
+        
+        font-weight: 700;
+        font-size: 2.2vh;
+        margin:  0;
+        padding: 2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        
+}
+
 .cuisine-container h1 {
-    margin: 3vh;
+    margin: 0 auto 2vh 0;
+    text-shadow: none;
+}
+
+.cuisine-image-tile img{
+    width: 100%;
+}
+
+#fusion, #italian{
+    background-color: rgba(184, 134, 11, 0.9);
+    color:rgba(13, 1, 49, 1);
+}
+
+#traditional, #american{
+    color: rgba(184, 134, 11, 1);
+    background-color:rgba(13, 1, 49, 0.9);
+}
+
+
+
+/*approaching square from portrait*/
+@media screen and (min-aspect-ratio: 47/80) and (max-aspect-ratio: 1/1){
+
+    .cuisine-image-tile{
+        float: right;
+        width: 37vw;
+        margin: 3vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .footer {
+        
+        position: relative;
+        top: 18vh;
+    }
 }
