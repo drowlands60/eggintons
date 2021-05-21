@@ -75,18 +75,20 @@ a {
 /*Opening Hours*/
 
 #opening-hours{
-    position:absolute;
-    background-color: darkgoldenrod;
-    color: rgba(13, 1, 49, 1);
+    
+    color: darkgoldenrod;
+    background-color: rgba(13, 1, 49, 1);
     margin: 0;
-    height: 4vh;
-    bottom: 14vh;
     width: 100%;
     font-size: 1.7vh;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#opening-hours p{
+    margin:1vh auto;
 }
 
 
@@ -266,6 +268,8 @@ nav li:hover {
     
 }
 
+
+
 .body-filter{
     background-color: rgba(2, 0, 24, 0.30);
     height:100vh;
@@ -423,7 +427,7 @@ nav li:hover {
     /*Opening Hours*/
     #opening-hours {
         bottom: 15vh;
-        font-size: 1.9vh;
+        font-size: 2.9vh;
     }
 
     #nav-email {
@@ -515,11 +519,8 @@ nav li:hover {
     /*opening-hours*/
 
     #opening-hours{
-        height: 5vh;
-        bottom: 75vh;
-        font-size: 2.6vh;
-        margin: 1vh 0;
-        font-weight: bold;
+        font-size: 3.5vh;
+        
         
     }
 
@@ -681,7 +682,12 @@ nav li:hover {
         }
 
         #opening-hours{
-            bottom: 77vh;
+            font-size: 2vh;
+            padding-bottom: 3vh;
+        }
+
+        #gallery-container{
+            box-shadow: 0 3vh 3vh darkgoldenrod;
         }
 
         .review-tile {

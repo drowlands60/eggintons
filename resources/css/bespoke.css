@@ -7,105 +7,193 @@
      width: 60%
  }*/
 
+ #bespoke-body-image {
+    background-image: url('../images/meal2.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    
+    
+}
+
 #bespoke-intro{
     background-color: rgb(255, 255, 255, 0.8);
     color: #0d0131;
-    font-size: 3vh;
-    margin: 3vw;
+    font-size: 2.7vh;
+    margin: 3vw auto;
     padding: 2vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    max-width: 900px;
+}
+
+.intro-image-tile{
+    display: none;
+    height: 100%;
+    margin: auto;
+}
+
+.intro-image{
+    width: 20vw;
+    max-width: 200px;
+    border: 1px solid #fff;
+    display: none;
 }
 
 #bespoke-intro p{
-    margin:0;
+    margin: auto;
+    padding: 0 3vw;
+    text-align: justify;
 }
 
 .cuisine-list{
-    background-color: rgba(13, 1, 49, 1);
     margin: 0;
     position: sticky;
-    top: 0;
     z-index: 11;
-    height: 16vh;
-    display: none;
+    
+    
     
 }
 
 .cuisine-list ul {
-    width: 100vw;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0;
-    flex-wrap: wrap;
-    
+    margin: 0;
+    background-color: rgba(184, 134, 11, 1);
 }
 
 .cuisine-list li {
-    display: flex;
     align-content: center;
     justify-content: center;
-    width: 50%;
-    height: 8vh;
-    font-size: 3rem;
-
-    
-    
+    width: 23%;
+    font-size: 1rem;
+    margin: auto 0;
+    padding: 1.5vh 0.5vw;
+    font-weight: 600;
+    background-color: rgba(184, 134, 11, 1);
+    color:rgba(13, 1, 49, 1);
+    list-style-type: none;
+    border-radius: 3vh 3vh 0 0;
+    min-height: 3vh;
 }
 
-.cuisine-list li p{
-    margin: auto 0;
-    color:darkgoldenrod;
-    font-weight: 600;
+.cuisine-list .active {
+    color: rgba(184, 134, 11, 1);
+    background-color:rgba(13, 1, 49, 1);
 }
 
 
 /*Cuisines*/
 .cuisine-container{
-    
-        
+        display: none;
         font-weight: 700;
-        font-size: 2.2vh;
+        font-size: 3vh;
         margin:  0;
-        padding: 2vh;
+        padding: 3vh 5vh;
         font-family: Arial, Helvetica, sans-serif;
+        color: rgba(184, 134, 11, 1);
+        background-color:rgba(13, 1, 49, 1);
+        min-height: 61vh;
         
 }
 
-.cuisine-container h1 {
-    margin: 0 auto 2vh 0;
+.active-cuisine-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header"
+        "image"
+        "description"
+        "list";   
+}
+
+.cuisine-header{
+    grid-area: header;
+    margin: auto;
     text-shadow: none;
 }
 
-.cuisine-image-tile img{
-    width: 100%;
+.cuisine-image{
+    grid-area: image;
 }
 
-#fusion, #italian{
-    background-color: rgba(184, 134, 11, 0.9);
-    color:rgba(13, 1, 49, 1);
+.description{
+    grid-area: description;
+    margin: auto;
+    
 }
 
-#traditional, #american{
-    color: rgba(184, 134, 11, 1);
-    background-color:rgba(13, 1, 49, 0.9);
+.list{
+    grid-area: list;
+    margin: auto;
 }
 
 
 
-/*approaching square from portrait*/
-@media screen and (min-aspect-ratio: 47/80) and (max-aspect-ratio: 1/1){
+.cuisine-image-tile {
+    margin:auto;
+    grid-area: image;  
+}
 
-    .cuisine-image-tile{
-        float: right;
-        width: 37vw;
-        margin: 3vw;
+.cuisine-container ul {
+    list-style-type: none;
+    
+}
+
+.cuisine-header, .cuisine-image, .description, .list{
+    margin: 2vh auto;
+}
+
+
+
+/*desktop*/
+@media only screen and (min-width: 1100px){
+
+    #bespoke-intro{
+        padding: 3vw 5vw;       
     }
-}
 
-@media only screen and (min-width: 992px){
+    .intro-image-tile{
+        display: block;
+    }
+
+    .intro-image{
+        display: block;
+    }
+
     .footer {
-        
         position: relative;
         top: 18vh;
     }
+
+    .active-cuisine-container{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 10vh 30vh 30vh ;
+        grid-template-areas:
+        "header header image image"
+        "description description image image"
+        "list list image image";        
+    }
+
+    .cuisine-image-tile {
+        height: 100%;
+        max-height: 45vw;
+    }
+
+    .cuisine-image-tile img{
+        height: 100%;
+    }
+
+    
+
 }
+

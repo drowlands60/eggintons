@@ -22,14 +22,14 @@
                 <img src="resources/images/logo.jpg" alt="Egginton's Logo">
             </div>
     </header>
-    <nav>
+    <nav id="bespoke-nav">
         <div id="nav-upper">
-            <p id="nav-email">rg.eggington@gmail.com</p>
+            <p id="nav-email">rg.egginton@gmail.com</p>
             <ul>
                 <a href="index.html"><li>home</li></a>
                 <a href="bespoke.html"> <li>bespoke</li></a>
                 <a href="map.html"><li>find</li></a>
-                <li>menu</li>
+                <a href="menu.pdf" target="_blank"><li>menu</li></a>
             </ul>
         </div>
         <div id="nav-contact">
@@ -43,69 +43,127 @@
     <main>
         <section>
             <div id="bespoke-intro">
+                <div class="intro-image-tile">
+                    <img class="intro-image" src="./resources/images/intro1.JPG" alt="dish">
+                </div>
                 <p>
                     Wedding, function, birthday party or extra special dinner party, why not let Chef Bob help you design your very own private dining experience. With over 18 years in professional kitchens all over the UK from Michelin starred restaurants, five star hotels, Asian fusion restaurants and quirky gastro pubs, Chef Bob has the repertoire to deliver something unique for your occasion. Let's put together the perfect menu for your special day.
                 </p>
+                <div class="intro-image-tile">
+                    <img class="intro-image" src="./resources/images/intro2.jpg" alt="dish">
+                </div>
             </div>
         </section>
-        <div class="cuisine-list">
-            <ul>
-                <li><p>Fusion</p></li>
-                <li><p>Traditional</p></li>
-                <li><p>Italian</p></li>
-                <li><p>American</p></li>
-            </ul>
-        </div>
         <section>
-            <div class="cuisine-container" id="fusion">
-                <h1>Fusion</h1>
-                <div class="cuisine-image-tile">
-                    <img class="cuisine-image" id="fusion-image" src="./resources/images/meal2.jpg" alt="fusion-dish">
-                </div>
-                <div class="cusine-description" id="fusion-description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tortor maximus massa blandit fringilla eu a urna. Ut vestibulum eros quis sodales finibus. Pellentesque euismod magna id magna gravida, ut pellentesque urna congue. Cras laoreet, neque eget semper egestas, enim leo ornare turpis, quis suscipit erat diam feugiat augue. Vivamus diam nulla, finibus sed faucibus ut, porta sed libero. Nulla id odio sit amet purus semper rhoncus. Curabitur finibus mauris ac felis mattis fringilla. Nulla tincidunt pulvinar lobortis. Suspendisse ex massa, semper blandit vestibulum vel, sollicitudin eu velit. Nullam leo leo, convallis vitae tellus quis, venenatis lobortis nisl. Etiam eu enim hendrerit, pellentesque metus sit amet, maximus nunc.
+            <div class="cuisine-list">
+                <ul>
+                    <li class='tab active'>British</li>
+                    <li class='tab'>Italian</li>
+                    <li class='tab'>French</li>
+                    <li class='tab'>Middle-Eastern</li>
+                    <li class='tab'>Japanese</li>
+                    <li class='tab'>Fusion</li>
+                </ul>
+            </div>
+            <div class="cuisine-container active-cuisine-container" id="british">
+               
+                    <div class="cuisine-image-tile" id="british-image">
+                        <img class="cuisine-image" id="traditional-image" src="./resources/images/british.jpg" alt="british-dish">
+                    </div>
+                    <h1 id="british-header" class="cuisine-header">Traditional British</h1>
+                    <p id="british-description" class="description">
+                        Britain has a vast natural larder, some of the best beef, lamb and pork in the world and being an island nation, stunning fish. I love creating dishes from the past and adding a twist to them. British food is generally simple but substantial, delicious and wholesome.
                     </p>
-                </div>
+                    <ul id="british-list" class="list">
+                        <li>Traditional Roast</li>
+                        <li>Fish Pies</li>
+                        <li>Hot Pots</li>
+                        <li>Braised Meats</li>
+                        <li>Stews</li>
+                        <li>Afternoon Teas</li>
+                        <li>Fish and Chips</li>
+                    </ul>
             </div>
-        </section>
-        <section>
-            <div class="cuisine-container" id="traditional">
-                <h1>Traditional</h1>
-                <div class="cuisine-image-tile">
-                    <img class="cuisine-image" id="traditional-image" src="./resources/images/meal2.jpg" alt="fusion-dish">
-                </div>
-                <div class="cusine-description" id="traditional-description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tortor maximus massa blandit fringilla eu a urna. Ut vestibulum eros quis sodales finibus. Pellentesque euismod magna id magna gravida, ut pellentesque urna congue. Cras laoreet, neque eget semper egestas, enim leo ornare turpis, quis suscipit erat diam feugiat augue. Vivamus diam nulla, finibus sed faucibus ut, porta sed libero. Nulla id odio sit amet purus semper rhoncus. Curabitur finibus mauris ac felis mattis fringilla. Nulla tincidunt pulvinar lobortis. Suspendisse ex massa, semper blandit vestibulum vel, sollicitudin eu velit. Nullam leo leo, convallis vitae tellus quis, venenatis lobortis nisl. Etiam eu enim hendrerit, pellentesque metus sit amet, maximus nunc.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section>
             <div class="cuisine-container" id="italian">
-                <h1>Italian</h1>
-                <div class="cuisine-image-tile">
-                    <img class="cuisine-image" id="italian-image" src="./resources/images/meal2.jpg" alt="fusion-dish">
-                </div>
-                <div class="cusine-description" id="italian-description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tortor maximus massa blandit fringilla eu a urna. Ut vestibulum eros quis sodales finibus. Pellentesque euismod magna id magna gravida, ut pellentesque urna congue. Cras laoreet, neque eget semper egestas, enim leo ornare turpis, quis suscipit erat diam feugiat augue. Vivamus diam nulla, finibus sed faucibus ut, porta sed libero. Nulla id odio sit amet purus semper rhoncus. Curabitur finibus mauris ac felis mattis fringilla. Nulla tincidunt pulvinar lobortis. Suspendisse ex massa, semper blandit vestibulum vel, sollicitudin eu velit. Nullam leo leo, convallis vitae tellus quis, venenatis lobortis nisl. Etiam eu enim hendrerit, pellentesque metus sit amet, maximus nunc.
+                    <div class="cuisine-image-tile">
+                        <img class="cuisine-image" id="italian-image" src="./resources/images/italian.JPG" alt="italian-dish">
+                    </div>
+                    <h1 class="cuisine-header">Italian</h1>
+                    <p class="description">
+                        Italian cooking is a rustic and hearty style of cooking. Like most cuisines the most popular dishes have evolved over the centuries essentially from peasants dishes. Years of refining and tweaking dishes has resulted in some really stunning classic dishes.
                     </p>
-                </div>
+                    <ul class="list">
+                        <li>Raviolis</li>
+                        <li>Tortellinis</li>
+                        <li>Minestrone</li>
+                        <li>Carbonara</li>
+                        <li>Pizzas</li>
+                        <li>Fresh Pasta Dishes</li>
+                        <li>Ossobucco</li>
+                        <li>Risottos</li>
+                    </ul>
             </div>
-        </section>
-        <section>
-            <div class="cuisine-container" id="american">
-                <h1>American</h1>
+            <div class="cuisine-container" id="french">
                 <div class="cuisine-image-tile">
-                    <img class="cuisine-image" id="american-image" src="./resources/images/meal2.jpg" alt="fusion-dish">
+                    <img class="cuisine-image" id="french-image" src="./resources/images/meal11.jpg" alt="french-dish">
                 </div>
-                <div class="cusine-description" id="american-description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tortor maximus massa blandit fringilla eu a urna. Ut vestibulum eros quis sodales finibus. Pellentesque euismod magna id magna gravida, ut pellentesque urna congue. Cras laoreet, neque eget semper egestas, enim leo ornare turpis, quis suscipit erat diam feugiat augue. Vivamus diam nulla, finibus sed faucibus ut, porta sed libero. Nulla id odio sit amet purus semper rhoncus. Curabitur finibus mauris ac felis mattis fringilla. Nulla tincidunt pulvinar lobortis. Suspendisse ex massa, semper blandit vestibulum vel, sollicitudin eu velit. Nullam leo leo, convallis vitae tellus quis, venenatis lobortis nisl. Etiam eu enim hendrerit, pellentesque metus sit amet, maximus nunc.
-                    </p>
+                <h1 class="cuisine-header">French</h1>
+                <p class="description">
+                    Modern day haute cuisine was invented and mastered by the French. They pioneered this new way of cooking and it has influenced every other cuisine and kitchen in the world in one way or another!
+                </p>
+                <ul class ="list">
+                    <li>Boeuf Bourguignon</li>
+                    <li>Salmon en Papillote</li>
+                    <li>French Onion Soup</li>
+                    <li>Duck Confit</li>
+                    <li>Bouillabaisse</li>
+                    <li>Cassoulet</li>
+                </ul>
+            </div>
+            <div class="cuisine-container" id="middle-eastern">
+                <div class="cuisine-image-tile">
+                    <img class="cuisine-image" id="middle-eastern-image" src="./resources/images/meastern.jpg" alt="middle-eastern-dish">
                 </div>
+                <h1 class="cuisine-header">Middle-Eastern</h1>
+                <p class="description">
+                    Another firm favourite of ours. With an abundance of different spices to marinade meats, fish and vegetables along with that classic smokey flavour from the open fires it’s a really exciting style of cooking superb dishes. 
+                </p>
+                <ul class="list">
+                    <li>Shawarma</li>
+                    <li>Falafel</li>
+                    <li>Fattoush</li>
+                    <li>Tabouleh</li>
+                    <li>Grilled Meats<li>
+                    <li>Hummus</li>
+                    <li>Baklava</li>
+                </ul>
+            </div>
+            <div class="cuisine-container" id="japanese">
+                <div class="cuisine-image-tile">
+                    <img class="cuisine-image" id="japanese-image" src="./resources/images/japanese.JPG" alt="japanese-dish">
+                </div>
+                <h1 class="cuisine-header">Japanese</h1>
+                <p class="description">
+                    Japanese cooking is simplistic, fresh and usually very healthy. The national dish of sushi is a firm favourite of ours at Eggintons. There are many types of noodles, broths, vegetables and fruits to make this one of the most exciting cuisines  to work with and consume!
+                </p>
+                <ul class="list">
+                    <li>Sushi</li>
+                    <li>Nigiri</li>
+                    <li>Sashimi</li>
+                    <li>Tempura</li>
+                    <li>Yakitori<li>
+                    <li>Udon</li>
+                    <li>Miso</li>
+                </ul>
+            </div>
+            <div class="cuisine-container" id="fusion">
+                <div class="cuisine-image-tile">
+                    <img class="cuisine-image" id="fusion-image" src="./resources/images/fusion.jpg" alt="fusion-dish">
+                </div>
+                <h1 class="cuisine-header">Fusion</h1>
+                <p class="description">
+                    I love playing around with new dishes, techniques and flavours. There is always something new to learn and to experiment with. Fusion food combines contrasting culinary traditions into a single dish. It’s a really exciting form of cooking.
+                </p>
             </div>
         </section>
     </main>
@@ -121,6 +179,9 @@
         <a href="https://www.instagram.com/eggintonscatering/?hl=en" target="_blank"><img src="./resources/images/insta.png" alt="Instagram link"></a>    
     </footer>
 
-    <div id="body-image"></div>
+    <div id="bespoke-body-image"></div>
     <div class="body-filter"></div>  
+
+    <script type="application/javascript" src="resources/js/jquery.3.6.0.js"></script>
+  <script type="application/javascript" src="resources/js/script.js"></script>
 </body>
