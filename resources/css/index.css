@@ -157,7 +157,7 @@ nav li:hover {
     display: inline-block;
     height: 3rem;
     width: 3rem;
-    margin-left: 2vh;
+    margin-left: 1vw;
     border-radius: 100%;
 }
 
@@ -250,8 +250,8 @@ nav li:hover {
 
 .footer img{
     display: inline-block;
-    width: 15vw;
-    height: 15vw;
+    width: 11vw;
+    height: 11vw;
 }
 
 
