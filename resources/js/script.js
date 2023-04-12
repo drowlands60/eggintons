@@ -1,20 +1,15 @@
-const monToThursOpening = '8am - 2pm';
-const fridayOpening = '8am - 2pm & 5pm - 9pm';
-const saturdayOpening = '5pm - 9pm';
+const monToFriOpening = '8am - 2pm';
+
 
 $(document).ready(() => {
 
 
     $('.cuisine-list').css('top', $('#bespoke-nav').css('height'));
     $('#opening-hours').html(
-        `<p class="openBrokenPara">Open Monday - Thursday ${monToThursOpening}</p>
-        <p class="openBrokenPara">Friday ${fridayOpening}</p>
-        <p class="openBrokenPara">Saturday ${saturdayOpening}</p>`
+        `<p class="openBrokenPara">Open Monday - Friday ${monToFriOpening}</p>`
     );
     $('#map-opening-hours').html(
-        `<p class="openBrokenPara">Open Monday - Thursday ${monToThursOpening}</p>
-        <p class="openBrokenPara">Friday ${fridayOpening}</p>
-        <p class="openBrokenPara">Saturday ${saturdayOpening}</p>`
+        `<p class="openBrokenPara">Open Monday - Friday ${monToFriOpening}</p>`
     )
     
 
