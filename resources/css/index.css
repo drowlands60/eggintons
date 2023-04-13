@@ -171,7 +171,6 @@ nav li:hover {
 
 #gallery-container {
     background-color: rgba(194, 194, 194, 1);
-    /* box-shadow: 0 3vh 3vh rgba(194, 194, 194, 1); */
     width: 96vw;
     padding: 4rem 2vw;
     margin: 0 auto;
@@ -338,7 +337,7 @@ nav li:hover {
         width: 39vw;
         height: auto;
         max-width: 68vh;
-        border: 1px solid goldenrod;
+        border: 1px solid black;
         box-shadow: 0 0 2px rgb(0 0 0);
     }
 
